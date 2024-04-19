@@ -1,0 +1,135 @@
+/* Style untuk tag video */
+video {
+    position: absolute; /* Mengatur posisi absolut */
+    top: 0;
+    left: 0;
+    nav-down: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan konten video/audio terisi area dengan rasio yang benar */
+    z-index: -1; /* Mengatur lapisan di belakang elemen lain */
+}
+
+
+/* Style untuk tag audio */
+audio {
+    width: 20%;
+    height: 50px; /* Tinggi audio player */
+    background-color: #060d76; /* Warna latar belakang */
+    border-radius: 5px; /* Sudut bulat */
+    margin-top: 20px; /* Jarak atas dari elemen lain */
+    opacity: 0; /* Tingkat transparansi */
+}
+
+
+/* Style untuk tombol play dan pause */
+.play-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Pastikan tombol berada di atas gambar */
+}
+.play-button i,
+.pause-button i {               /*untuk tombol play pause (dalam)*/
+    font-size: 25px;
+    color: #5f0a41;
+    
+}
+/* Efek hover untuk tombol */
+.play-button:hover,
+.pause-button:hover {
+    transform: scale(1.5); /* Perbesar tombol saat hover */
+    box-shadow: 0 4px 8px rgb(122, 55, 104); /* Tambahkan bayangan saat hover */
+}
+
+
+/*Style untuk gambar */
+img {
+    max-width: 32%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(88, 88, 95, 0.975); /* Efek bayangan */
+    position: absolute; /* Mengatur posisi absolut */
+    overflow: hidden; /* Untuk mengatur overflow */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Posisikan gambar di tengah */
+    z-index: 0; /* Pastikan gambar berada di bawah tombol */
+}
+
+img:hover {             /* Efek hover untuk shadow dinamis */
+    box-shadow: 0 8px 16px rgba(8, 0, 19, 0.918); /* Shadow yang lebih besar saat hover */
+    transition: box-shadow 0.3s ease; /* Transisi perubahan shadow */
+    opacity: 0.7; /* Nilai transparansi saat hover (0-1) */
+}
+
+
+/* Style untuk judul lagu */
+.judul-lagu {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Matura MT Script Capitals;
+    color: #5def08; /* Warna teks */
+    margin-bottom: 5px; /* Jarak bawah */
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Style untuk nama artis */
+.artis {
+    font-size: 40px;
+    color: #095b14; /* Warna teks*/ 
+    margin-bottom: 10px; /* Jarak bawah */
+    position: absolute;
+    top: 16%;
+    left: 48%;
+    text-align: center; /* Pusatkan teks */
+    font-family: Chiller;
+}
+
+
+/* Style untuk progress bar container */
+.progress-bar-container {
+    width: 30%;
+    position: absolute;
+    bottom: 10;
+    top: 72%;
+    left: 34%;
+    padding: 10px; /* Padding untuk memberi ruang sekitar progress bar */
+    background-color: rgba(83, 91, 125, 0); /* Warna latar belakang semi-transparan */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style untuk progress bar */
+.progress-bar {
+    width: 100%;
+    height: 5px; /* Tinggi progress bar */
+    background-color: #506d01; /* Warna background progress bar */
+    border-radius: 5px; /* Sudut bulat */
+    overflow: hidden; /* Mengatur overflow */
+    position: absolute; /* Mengatur posisi absolut */
+    bottom: 0; /* Letakkan progress bar di bawah */
+    left: 0;
+   
+}
+
+/* Style untuk fill progress bar */
+.progress-bar-fill {
+    height: 100%;
+    background-color: #c8cf09; /* Warna fill progress bar */
+    border-radius: 7px; /* Sudut bulat */
+}
+
+/* Style untuk display waktu */
+.time-display {
+    font-size: 19px;
+    color: #43000c; /* Warna teks  */
+    font-family:Forte ; /*jenis font*/
+}

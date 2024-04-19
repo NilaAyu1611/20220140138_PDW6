@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDW 6</title>
+    <link rel="icon" href="assets/NaCW.jpg">            <!--icon dibagian atas-->
+    <link rel="stylesheet" href="style/style.css">      <!--memanggil style css-->
+    <!-- Link Font Awesome (style tombol) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Audio player -->
+    <audio id="myAudio" controls>
+        <source src="assets/Marshmello.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+     <!-- video player -->
+    <video id="mrs-video" muted loop autoplay>
+        <source src="assets/Marshmello - FLY.mp4" type="video/mp4">
+        Your browser does not support the video.
+    </video> 
+    <div class="overlay"></div>
+        
+    <div class="media-container">
+        <img src="https://c1.wallpaperflare.com/preview/660/472/0/hoodie-mask-led-skull.jpg" alt="Song Cover"   
+            class="song-cover">              <!-- link gambar -->
+        <div class="song-info">
+            <h1 class="judul-lagu">Fly</h1>
+            <p class="artis">Marshmello</p>
+            <div class="progress-bar-container">             <!-- durasi -->
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                </div>
+                <span class="time-display">0:00 / 0:00</span> <!--menampilkan waktu saat ini dan durasi total lagu-->
+            </div>
+            <div class="play-controls">     <!--tombol putar dan jeda-->
+                <button class="play-button">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="pause-button">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>     <!-- memanggil script js -->
+</body>
+</html>
